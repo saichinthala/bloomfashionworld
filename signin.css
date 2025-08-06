@@ -1,0 +1,96 @@
+/* Reset & base styles */
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Wrapper */
+.auth-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+}
+
+/* Form container */
+.form-container {
+  position: relative;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+/* Hide radio inputs */
+input[type="radio"] {
+  display: none;
+}
+
+/* Toggle buttons */
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+.toggle-buttons label {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+#login:checked ~ .toggle-buttons label[for="login"],
+#signup:checked ~ .toggle-buttons label[for="signup"] {
+  border-color: #333;
+}
+
+/* Forms */
+.form {
+  display: none;
+  flex-direction: column;
+}
+#login:checked ~ .login-form {
+  display: flex;
+}
+#signup:checked ~ .signup-form {
+  display: flex;
+}
+
+.form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.form button {
+  padding: 0.75rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.form button:hover {
+  background: #111;
+}
+.small-text {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.small-text label {
+  color: #007BFF;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login & Sign Up – Instylr</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+  <section class="auth-wrapper">
+    <div class="form-container">
+      <input type="radio" name="toggle" id="login" checked>
+      <input type="radio" name="toggle" id="signup">
+
+      <div class="toggle-buttons">
+        <label for="login">Login</label>
+        <label for="signup">Sign Up</label>
+      </div>
+    
+      <form class="form signup-form">
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign Up</button>
+        <p class="small-text">Already have an account? <label for="login">Login</label></p>
+      </form>
+
+      
+      <form class="form login-form" action="index.html" method="get">
+        <h2>Login to Instylr</h2>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p class="small-text">Don't have an account? <label for="signup">Sign up</label></p>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

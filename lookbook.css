@@ -1,0 +1,30 @@
+/* Basic reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Helvetica Neue',sans-serif; color:#333; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+
+
+.container { width:90%; max-width:1140px; margin:0 auto; }
+
+.site-header { background:#fff; padding:1rem 0; }
+.nav { display:flex; justify-content:space-between; align-items:center; }
+.logo { font-size:1.5rem; font-weight:bold; }
+.menu { list-style:none; display:flex; gap:1rem; }
+.menu a { padding:0.5rem .75rem; font-weight:500; color:#333; }
+.menu a.active { border-bottom:2px solid #333; }
+
+
+.page-title { position:relative; height:40vh; display:flex; align-items:center; justify-content:center; color:#fff; text-align:center; }
+.page-title .overlay { position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.5); }
+.page-title .container { position:relative; z-index:2; }
+.page-title h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+.page-title p { font-size:1.1rem; }
+
+
+.lookbook { margin:2rem; margin-right: 2rem; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.75rem; }
+.item { overflow:hidden; }
+.item img { width:100%; height:auto; display:block; transition: transform .10s ease; }
+.item:hover img { transform: scale(1.75rem); }
+
+.site-footer { text-align:center; padding:2rem 0; border-top:1px solid #eee; color:#777; font-size:0.9rem; }
